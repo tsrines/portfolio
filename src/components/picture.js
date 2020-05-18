@@ -1,9 +1,4 @@
 import React from 'react'
-
-const style = () => {
-  JSON.stringify()
-}
-
 export const Picture = () => {
     return <img alt="" style={{
       "background-color": "black",
@@ -14,5 +9,5 @@ export const Picture = () => {
       "margin-right": "auto",
       "width": "15%",
       "height": "15%"}} 
-      src="favico.ico"  />
+      src="TimHeadshot.jpg"  />
 }
