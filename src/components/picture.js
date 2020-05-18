@@ -9,5 +9,5 @@ export const Picture = () => {
       "margin-right": "auto",
       "width": "15%",
       "height": "15%"}} 
-      src="/TimHeadshot.jpg"  />
+      src="public/TimHeadshot.jpg"  />
 }
