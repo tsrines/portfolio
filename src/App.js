@@ -13,6 +13,7 @@ function App() {
     <Fragment>
       {/* <ButtonAppBar /> */}
       <Picture />
+      <h1>Hello</h1>
     </Fragment>
   );
 }
