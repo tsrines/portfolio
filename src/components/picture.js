@@ -13,12 +13,12 @@ export const Picture = () => {
 
       <div className="link">
         <Breadcrumbs aria-label="breadcrumb">
-          {airbnb()}
           {linkedIn()}
           {twitter()}
-          {github()}
+          {airbnb()}
           {resume()}
           {medium()}
+          {github()}
         </Breadcrumbs >
       </div>
     </Fragment>
