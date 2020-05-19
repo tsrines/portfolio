@@ -3,6 +3,8 @@ import { Link, Switch, Route, Path } from 'react-router'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { ButtonAppBar } from './components/nav'
 import { Picture } from './components/picture'
+import './App.css'  
+
 
 
 
@@ -10,11 +12,11 @@ import { Picture } from './components/picture'
 
 function App() {  
   return (
-    <Fragment>
-      {/* <ButtonAppBar /> */}
+    <div>
+
       <Picture />
-      <h1>Hello</h1>
-    </Fragment>
+
+    </div>
   );
 }
 
