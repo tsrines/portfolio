@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fragment } from 'react'
-import { linkedIn, twitter, github, resume, medium, airbnb } from './links'
+import { linkedIn, email, twitter, github, resume, medium, airbnb } from './links'
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
 export const Picture = () => {
@@ -19,6 +19,7 @@ export const Picture = () => {
           {resume()}
           {medium()}
           {github()}
+          {email()}
         </Breadcrumbs >
       </div>
     </Fragment>

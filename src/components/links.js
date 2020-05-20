@@ -5,6 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub'
 import EmailIcon from '@material-ui/icons/Email';
 import { IconButton, SvgIcon } from '@material-ui/core';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 
 import Typography from '@material-ui/core/Typography';
@@ -20,7 +21,10 @@ export const github = (props) => {
   return <Link color="inherit" target="_blank" href="https://www.github.com/tsrines" component="a" onClick={(e) => console.log(e)}><GitHubIcon /></Link>
 }
 export const resume = () => {
-  return <Link color="inherit" href="https://www.learn.co/tsrines/resume" target="_blank" component="a" onClick={(e) => console.log(e)}><EmailIcon /></Link>
+  return <Link color="inherit" href="https://www.learn.co/tsrines/resume" target="_blank" component="a" onClick={(e) => console.log(e)}><DescriptionIcon /></Link>
+}
+export const email = () => {
+  return <Link color="inherit" href="mailto: tim@rines.io" target="_blank" component="a" onClick={(e) => console.log(e)}><EmailIcon /></Link>
 }
 export const airbnb = () => {
   return <Link
