@@ -13,6 +13,9 @@
 /build
 
 # misc
+medium-brands.svg
+airbnb-brands.svg
+nav.js
 .DS_Store
 .env.local
 .env.development.local

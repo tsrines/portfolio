@@ -1,4 +1,5 @@
-import { React,Fragment } from 'react'
+import React, {Fragment} from 'react'
+
 import { linkedIn, email, twitter, github, resume, medium, airbnb } from './links'
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
