@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import DropdownExampleInline from './DropDownExampleInline'
 
 import { linkedIn, email, twitter, github, resume, medium, airbnb } from './links'
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
@@ -22,6 +23,7 @@ export const Picture = () => {
           {email()}
         </Breadcrumbs >
       </div>
+        <DropdownExampleInline/>
     </Fragment>
   )
 }
