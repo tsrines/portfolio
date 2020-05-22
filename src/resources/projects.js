@@ -14,7 +14,7 @@ export const projects = [
     },
     demoVideo: "",
     image: {
-      imageURL: "",
+      imageURL: "https://github.com/tsrines/portfolio/blob/master/public/images/Telemed.png?raw=true",
       position: "center"
     }
   },
@@ -33,7 +33,7 @@ export const projects = [
     },
     demoVideo: "",
     image: {
-      imageURL: "",
+      imageURL: "https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true",
       position: "center"
     }
   },  
@@ -52,7 +52,7 @@ export const projects = [
     },
     demoVideo: "",
     image: {
-      imageURL: "",
+      imageURL: "https://github.com/tsrines/portfolio/blob/master/public/images/NameError.png?raw=true",
       position: "center"
     }
   }
