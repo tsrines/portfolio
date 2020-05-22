@@ -8,7 +8,6 @@ const DropdownExampleInline = (props) => {
     optionHash.key = project.name
     optionHash.text = project.name
     optionHash.value = project.name
-    optionHash.slug = project.slug
     optionHash.onClick = (e,data) => history.push(`/${project.slug}`)
     optionHash.image = { avatar: true, src: project.image.imageURL}
     options.push(optionHash)
@@ -16,12 +15,12 @@ const DropdownExampleInline = (props) => {
 
   return (
     <span className='span'>
-      <Dropdown
-        // onClick={(e, data) => console.log(e,data)}
-        inline
-        options={options}
-        defaultValue={projects[0].name}    
-      />
+        <Dropdown
+          open
+          inline
+          options={options}
+          defaultValue={projects[0].name}    
+        />
     </span>
   )
 }
