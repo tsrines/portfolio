@@ -16,7 +16,6 @@ const DropdownExampleInline = (props) => {
   return (
     <span className='span'>
         <Dropdown
-          open
           inline
           options={options}
           defaultValue={projects[0].name}    
