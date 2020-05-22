@@ -1,44 +1,29 @@
-
-
 import React from 'react'
 import { Dropdown } from 'semantic-ui-react'
+const DropdownExampleInline = (props) => {
+  const {projects, history} = props
+  const options = []
+  projects.forEach(project => {
+    let optionHash = {}
+    optionHash.key = project.name
+    optionHash.text = project.name
+    optionHash.value = project.name
+    optionHash.slug = project.slug
+    optionHash.onClick = (e,data) => history.push(`/${project.slug}`)
+    optionHash.image = { avatar: true, src: project.image.imageURL}
+    options.push(optionHash)
+  })
 
-const friendOptions = [
-  {
-    key: 'Jenny Hess',
-    text: 'Jenny Hess',
-    value: 'Jenny Hess',
-    image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
-  },
-  {
-    key: 'Elliot Fu',
-    text: 'Elliot Fu',
-    value: 'Elliot Fu',
-    image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
-  },
-  {
-    key: 'Stevie Feliciano',
-    text: 'Stevie Feliciano',
-    value: 'Stevie Feliciano',
-    image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
-  },
-  {
-    key: 'Christian',
-    text: 'Christian',
-    value: 'Christian',
-    image: { avatar: true, src: '/images/avatar/small/christian.jpg' },
-  },
-]
-
-const DropdownExampleInline = () => (
-  <span className='span'>
-    Show me posts by{' '}
-    <Dropdown
-      inline
-      options={friendOptions}
-      defaultValue={friendOptions[0].value}
-    />
-  </span>
-)
+  return (
+    <span className='span'>
+      <Dropdown
+        // onClick={(e, data) => console.log(e,data)}
+        inline
+        options={options}
+        defaultValue={projects[0].name}    
+      />
+    </span>
+  )
+}
 
 export default DropdownExampleInline

@@ -12,9 +12,9 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Router basename="https://tsrines.github.io/">
+      <Router >
         <Switch>
-          <Route exact path='/'component={Picture}></Route>
+          <Route exact path='/'render={(props)=> <Picture {...props} projects={projects}/>}/>
           <Route exact path='/portfolio' render={(props)=> <Portfolio {...props} projects={projects}/>}/>
           {projects.map(project => {
                 return <Route key={project.id} 

@@ -5,7 +5,7 @@ import { linkedIn, email, twitter, github, resume, medium, airbnb } from './link
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
 
-export const Picture = () => {
+export const Picture = (props) => {
   return (
     <Fragment>
       <div >
@@ -23,7 +23,7 @@ export const Picture = () => {
           {email()}
         </Breadcrumbs >
       </div>
-        <DropdownExampleInline/>
+        <DropdownExampleInline {...props} />
     </Fragment>
   )
 }
