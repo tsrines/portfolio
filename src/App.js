@@ -12,7 +12,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="https://tsrines.github.io/">
         <Switch>
           <Route exact path='/'component={Picture}></Route>
           <Route exact path='/portfolio' render={(props)=> <Portfolio {...props} projects={projects}/>}/>
