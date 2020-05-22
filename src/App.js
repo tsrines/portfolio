@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route} from 'react-router'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import { projects } from './resources/projects'
 import { Picture } from './components/picture'
 import {ProjectShow} from './components/ProjectShow'
@@ -12,7 +12,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Router >
+      <Router basename='/' >
         <Switch>
           <Route exact path='/'render={(props)=> <Picture {...props} projects={projects}/>}/>
           <Route exact path='/portfolio' render={(props)=> <Portfolio {...props} projects={projects}/>}/>
