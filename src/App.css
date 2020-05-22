@@ -1,7 +1,7 @@
 
 .link {
   margin-top: 1rem;
-  size: 50%;
+  size: 25%;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -26,3 +26,6 @@
   margin-top: auto;
 
 }
+
+
+
