@@ -1,5 +1,5 @@
-import React, { } from 'react';
-import { Link, Switch, Route, Path } from 'react-router'
+import React from 'react';
+import { Switch, Route} from 'react-router'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { projects } from './resources/projects'
 import { Picture } from './components/picture'
@@ -20,7 +20,7 @@ function App() {
                 return <Route key={project.id} 
                 exact path = {`/${project.slug}`} 
                 render={ (props) =>
-                <ProjectShow {...props} 
+                <ProjectShow {...props}
                 project={project} />} 
                 />
             })}
