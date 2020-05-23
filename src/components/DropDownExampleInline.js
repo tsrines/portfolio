@@ -16,9 +16,11 @@ const DropdownExampleInline = (props) => {
   return (
     <span className='span'>
         <Dropdown
+          placeholder='PROJECTS'
+          // search
           inline
           options={options}
-          defaultValue={projects[0].name}    
+          // defaultValue={projects[0].name}    
         />
     </span>
   )
