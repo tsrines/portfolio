@@ -71,7 +71,7 @@ export const projects = [
     },
     demoVideo: "",
     image: {
-      imageURL: "https://media-exp1.licdn.com/dms/image/C4E03AQE4GsW9EANqIg/profile-displayphoto-shrink_400_400/0?e=1595462400&v=beta&t=hL-1Au7zqrZPR6OXEPJGNHnIAdsg4xDBqAjnEgT7cOA",
+      imageURL: "https://github.com/tsrines/portfolio/blob/master/public/images/Portfolio.png?raw=true",
       position: "center"
     }
   }
