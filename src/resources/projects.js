@@ -25,7 +25,7 @@ export const projects = [
     shortDescription: "Worldwide statistics for COVID-19 pandemic",
     websiteURL: "https://tsrines.github.io/corona-front/",
     longDescription: "Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day",
-    technologies: "React, Ruby on Rails, ActiveRecord, PostgreSQL, Heroku, Semantic UI, BetterDoc API, Google Geocode API",
+    technologies: "React.js,Heroku, Semantic UI React, Lodash, NovelCovid API",
     github: {
       main: "",
       frontend: "https://github.com/tsrines/corona-front",
@@ -53,6 +53,25 @@ export const projects = [
     demoVideo: "",
     image: {
       imageURL: "https://github.com/tsrines/portfolio/blob/master/public/images/NameError.png?raw=true",
+      position: "center"
+    }
+  },
+  {
+    id: 4,
+    slug: "portfolio",
+    name: "Portfolio",
+    shortDescription: "Portfolio Website",
+    websiteURL: "https://www.rines.io",
+    longDescription: "This website!", 
+    technologies: "React.js, Material UI React, Semantic UI React, Github Pages, Travis CI",
+    github: {
+      main: "",
+      frontend: "https://github.com/tsrines/portfolio",
+      backend: "",
+    },
+    demoVideo: "",
+    image: {
+      imageURL: "https://media-exp1.licdn.com/dms/image/C4E03AQE4GsW9EANqIg/profile-displayphoto-shrink_400_400/0?e=1595462400&v=beta&t=hL-1Au7zqrZPR6OXEPJGNHnIAdsg4xDBqAjnEgT7cOA",
       position: "center"
     }
   }

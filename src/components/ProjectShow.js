@@ -7,7 +7,7 @@ export const ProjectShow = (props) => {
 
   return (
     <Container>
-      <Image src={image.imageURL} alt=""></Image>
+      <Image center src={image.imageURL} alt=""></Image>
       <Table celled definition>
         <Table.Body >
           <Table.Row >
