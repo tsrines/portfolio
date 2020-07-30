@@ -1,26 +1,30 @@
 import React from 'react';
-import { Switch, Route} from 'react-router'
-import { HashRouter as Router } from 'react-router-dom'
-import { projects } from './resources/projects'
-import { Picture } from './components/picture'
-import {ProjectShow} from './components/ProjectShow'
+import { Switch, Route } from 'react-router';
+import { HashRouter as Router } from 'react-router-dom';
+import { projects } from './resources/projects';
+import { Picture } from './components/picture';
+import { ProjectShow } from './components/ProjectShow';
 
-import './App.css'
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Router basename='/' >
+    <div className='App'>
+      <Router basename='/'>
         <Switch>
-          <Route exact path='/'render={(props)=> <Picture {...props} projects={projects}/>}/>
-          {projects.map(project => {
-                return <Route key={project.id} 
-                exact path = {`/${project.slug}`} 
-                render={ (props) =>
-                <ProjectShow {...props}
-                project={project} />} 
-                />
-            })}
+          <Route
+            exact
+            path='/'
+            render={(props) => <Picture {...props} projects={projects} />}
+          />
+          {projects.map((project) => (
+            <Route
+              key={project.id}
+              exact
+              path={`/${project.slug}`}
+              render={(props) => <ProjectShow {...props} project={project} />}
+            />
+          ))}
         </Switch>
       </Router>
     </div>
@@ -28,13 +32,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-

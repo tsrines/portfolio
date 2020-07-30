@@ -28,9 +28,9 @@ export const Picture = (props) => {
         <Breadcrumbs aria-label='breadcrumb'>
           {linkedIn()}
           {twitter()}
-          {airbnb()}
+          {/* {airbnb()} */}
           {resume()}
-          {medium()}
+          {/* {medium()} */}
           {github()}
           {email()}
         </Breadcrumbs>
