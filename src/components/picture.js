@@ -1,19 +1,31 @@
-import React, {Fragment} from 'react'
-import DropdownExampleInline from './DropDownExampleInline'
+import React, { Fragment } from 'react';
+import DropdownExampleInline from './DropDownExampleInline';
+import TimHeadshot from '../TimHeadshot.jpg'
 
-import { linkedIn, email, twitter, github, resume, medium, airbnb } from './links'
+
+import {
+  linkedIn,
+  email,
+  twitter,
+  github,
+  resume,
+  medium,
+  airbnb,
+} from './links';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-
 
 export const Picture = (props) => {
   return (
     <Fragment>
-      <div >
-        <img className="picture" alt="" 
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQE4GsW9EANqIg/profile-displayphoto-shrink_400_400/0?e=1595462400&v=beta&t=hL-1Au7zqrZPR6OXEPJGNHnIAdsg4xDBqAjnEgT7cOA" />
+      <div>
+        <img
+          className='picture'
+          alt=''
+          src={TimHeadshot}
+        />
       </div>
-      <div className="link">
-        <Breadcrumbs aria-label="breadcrumb">
+      <div className='link'>
+        <Breadcrumbs aria-label='breadcrumb'>
           {linkedIn()}
           {twitter()}
           {airbnb()}
@@ -21,9 +33,9 @@ export const Picture = (props) => {
           {medium()}
           {github()}
           {email()}
-        </Breadcrumbs >
+        </Breadcrumbs>
       </div>
-        <DropdownExampleInline {...props} />
+      <DropdownExampleInline {...props} />
     </Fragment>
-  )
-}
+  );
+};

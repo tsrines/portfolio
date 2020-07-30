@@ -1,5 +1,6 @@
 import React from 'react'
 import { Dropdown } from 'semantic-ui-react'
+
 const DropdownExampleInline = (props) => {
   const {projects, history} = props
   const options = []
