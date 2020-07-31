@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Table, Image } from 'semantic-ui-react';
+import { Container, Table, Image, Embed } from 'semantic-ui-react';
 
 export const ProjectShow = (props) => {
   const {
@@ -11,11 +11,19 @@ export const ProjectShow = (props) => {
     technologies,
     github,
     websiteURL,
+    demoVideo,
   } = props.project;
+
+
 
   return (
     <Container>
-      <Image center src={image.imageURL} alt=''></Image>
+      {demoVideo !== "" ? <Embed
+        id={demoVideo}
+        placeholder={image.imageURL}
+        source='youtube'
+      /> : <Image center src={image.imageURL} alt=''></Image>}
+      
       <Table celled definition>
         <Table.Body>
           <Table.Row>
@@ -30,6 +38,12 @@ export const ProjectShow = (props) => {
               </a>
             </Table.Cell>
           </Table.Row>
+          {demoVideo && (
+            <Table.Row>
+              <Table.Cell>Demo: </Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+          )}
           <Table.Row>
             <Table.Cell>Description</Table.Cell>
             <Table.Cell>{longDescription}</Table.Cell>

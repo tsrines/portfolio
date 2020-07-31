@@ -8,9 +8,7 @@ import {
   email,
   twitter,
   github,
-  resume,
-  medium,
-  airbnb,
+  resume
 } from './links';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 

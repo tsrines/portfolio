@@ -14,7 +14,7 @@ export const projects = [
       frontend: 'https://github.com/tsrines/Telemed-front',
       backend: 'https://github.com/tsrines/Telemed-back',
     },
-    demoVideo: '',
+    demoVideo: 'pD13xqA2L7I',
     image: {
       imageURL:
         'https://github.com/tsrines/portfolio/blob/master/public/images/Telemed.png?raw=true',
