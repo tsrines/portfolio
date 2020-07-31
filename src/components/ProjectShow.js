@@ -14,16 +14,14 @@ export const ProjectShow = (props) => {
     demoVideo,
   } = props.project;
 
-
-
   return (
     <Container>
-      {demoVideo !== "" ? <Embed
-        id={demoVideo}
-        placeholder={image.imageURL}
-        source='youtube'
-      /> : <Image center src={image.imageURL} alt=''></Image>}
-      
+      {demoVideo !== '' ? (
+        <Embed id={demoVideo} placeholder={image.imageURL} source='youtube' />
+      ) : (
+        <Image center src={image.imageURL} alt=''></Image>
+      )}
+
       <Table celled definition>
         <Table.Body>
           <Table.Row>
@@ -38,12 +36,6 @@ export const ProjectShow = (props) => {
               </a>
             </Table.Cell>
           </Table.Row>
-          {demoVideo && (
-            <Table.Row>
-              <Table.Cell>Demo: </Table.Cell>
-              <Table.Cell></Table.Cell>
-            </Table.Row>
-          )}
           <Table.Row>
             <Table.Cell>Description</Table.Cell>
             <Table.Cell>{longDescription}</Table.Cell>
