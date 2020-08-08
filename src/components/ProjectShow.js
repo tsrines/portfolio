@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { Container, Table, Image, Embed } from 'semantic-ui-react';
 
 export const ProjectShow = ({
@@ -70,9 +70,7 @@ export const ProjectShow = ({
             <Table.Row>
               <Table.Cell>Github Backend</Table.Cell>
               <Table.Cell>
-                <Link component='a' target='_blank' href={github.backend}>
-                  {github.backend}
-                </Link>
+                <a href={github.backend}>{github.backend}</a>
               </Table.Cell>
             </Table.Row>
           )}
