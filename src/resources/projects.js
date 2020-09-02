@@ -23,22 +23,23 @@ export const projects = [
   },
   {
     id: 2,
-    slug: 'corona',
-    name: 'Corona Daily Check-In',
-    shortDescription: 'Worldwide statistics for COVID-19 pandemic',
-    websiteURL: 'https://tsrines.github.io/corona-front/',
+    slug: 'shoppies',
+    name: 'The Shoppies',
+    shortDescription: 'Find and nominate 5 of your favorite movies',
+    websiteURL: 'https://shoppies-front.netlify.app',
     longDescription:
-      'Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day',
-    technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
+      'The Shoppies was developed for a Shopify internship challenge. The goal was to pick 5 movies to nominate and share your list with your friends',
+    technologies:
+      'React.js, Semantic UI React, React Hooks, Axios, Ruby on Rails, PostgreSQL, OMDB API',
     github: {
       main: '',
-      frontend: 'https://github.com/tsrines/corona-front',
-      backend: '',
+      frontend: 'https://github.com/tsrines/shoppies-front',
+      backend: 'https://github.com/tsrines/shoppies-back',
     },
     demoVideo: '',
     image: {
       imageURL:
-        'https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true',
+        'https://github.com/tsrines/portfolio/blob/master/public/images/Shoppies.png?raw=true',
       position: 'center',
     },
   },
@@ -46,7 +47,7 @@ export const projects = [
     id: 3,
     slug: 'nameerror',
     name: 'nameError',
-    shortDescription: 'Search for doctors nationwide by illness',
+    shortDescription: 'Memory match game',
     websiteURL: 'https://nameerror.netlify.app',
     longDescription:
       'nameError, the game, is a memory match game.  There are 24 tiles and 12 pictures each with a pair.  Find them as fast as you can, check the leaderboard to see who has the best memory(luck?)',
@@ -82,6 +83,27 @@ export const projects = [
     image: {
       imageURL:
         'https://github.com/tsrines/portfolio/blob/master/public/images/Portfolio.png?raw=true',
+      position: 'center',
+    },
+  },
+  {
+    id: 5,
+    slug: 'corona',
+    name: 'Corona Daily Check-In',
+    shortDescription: 'Worldwide statistics for COVID-19 pandemic',
+    websiteURL: 'https://tsrines.github.io/corona-front/',
+    longDescription:
+      'Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day',
+    technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
+    github: {
+      main: '',
+      frontend: 'https://github.com/tsrines/corona-front',
+      backend: '',
+    },
+    demoVideo: '',
+    image: {
+      imageURL:
+        'https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true',
       position: 'center',
     },
   },
