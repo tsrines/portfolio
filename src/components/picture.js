@@ -1,26 +1,15 @@
 import React, { Fragment } from 'react';
-import DropdownExampleInline from './DropDownExampleInline';
-import TimHeadshot from '../TimHeadshot.jpg'
+import ProjectDropDown from './ProjectDropDown';
+import TimHeadshot from '../TimHeadshot.jpg';
 
-
-import {
-  linkedIn,
-  email,
-  twitter,
-  github,
-  resume
-} from './links';
+import { linkedIn, email, twitter, github, resume } from './links';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
 export const Picture = (props) => {
   return (
     <Fragment>
       <div>
-        <img
-          className='picture'
-          alt=''
-          src={TimHeadshot}
-        />
+        <img className='picture' alt='' src={TimHeadshot} />
       </div>
       <div className='link'>
         <Breadcrumbs aria-label='breadcrumb'>
@@ -33,7 +22,7 @@ export const Picture = (props) => {
           {email()}
         </Breadcrumbs>
       </div>
-      <DropdownExampleInline {...props} />
+      <ProjectDropDown {...props} />
     </Fragment>
   );
 };
