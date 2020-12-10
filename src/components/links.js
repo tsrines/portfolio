@@ -10,81 +10,62 @@ import DescriptionIcon from '@material-ui/icons/Description';
 export const linkedIn = () => {
   return (
     <Link
-      color='inherit'
       target='_blank'
       href='https://www.linkedin.com/in/rines/'
       component='a'
-      onMouseEnter={(e) => console.log(e)}
-      onMouseLeave={(e) => console.log(e)}
     >
-      <LinkedInIcon />
+      <LinkedInIcon style={{ color: `gray` }} />
     </Link>
   );
 };
 
 export const twitter = () => {
   return (
-    <Link
-      color='inherit'
-      target='_blank'
-      href='https://twitter.com/rines_io'
-      component='a'
-      onMouseEnter={(e) => console.log(e)}
-    >
-      <TwitterIcon />
+    <Link target='_blank' href='https://twitter.com/rines_io' component='a'>
+      <TwitterIcon style={{ color: `gray` }} />
     </Link>
   );
 };
 
 export const github = (props) => {
   return (
-    <Link
-      color='inherit'
-      target='_blank'
-      href='https://www.github.com/tsrines'
-      component='a'
-      onClick={(e) => console.log(e)}
-    >
-      <GitHubIcon />
+    <Link target='_blank' href='https://www.github.com/tsrines' component='a'>
+      <GitHubIcon style={{ color: `gray` }} />
     </Link>
   );
 };
 export const resume = () => {
   return (
     <Link
-      color='inherit'
       href='https://www.learn.co/tsrines/resume'
       target='_blank'
       component='a'
-      onClick={(e) => console.log(e)}
     >
-      <DescriptionIcon />
+      <DescriptionIcon style={{ color: `gray` }} />
     </Link>
   );
 };
 export const email = () => {
   return (
     <Link
-      color='inherit'
+      style={{ textDecoration: `none` }}
       href='mailto: tim@rines.io'
       target='_blank'
       component='a'
-      onClick={(e) => console.log(e)}
     >
-      <EmailIcon />
+      <EmailIcon style={{ color: `gray` }} />
     </Link>
   );
 };
 export const airbnb = () => {
   return (
     <Link
-      color='inherit'
       target='_blank'
       href='https://www.airbnb.com/users/show/45316653'
       component='a'
-      onClick={(e) => console.log(e)}
     >
       <SvgIcon
+        style={{ color: `gray` }}
         aria-hidden='true'
         focusable='false'
         data-prefix='fab'
@@ -92,8 +73,8 @@ export const airbnb = () => {
         width='24'
         height='24'
         xmlns='http://www.w3.org/2000/svg'
-        fill-rule='evenodd'
-        clip-rule='evenodd'
+        fillRule='evenodd'
+        clipRule='evenodd'
         viewBox='0 0 448 512'
       >
         <path
@@ -111,9 +92,9 @@ export const medium = () => {
       target='_blank'
       href='https://medium.com/@tim.rines.io'
       component='a'
-      onClick={(e) => console.log(e)}
     >
       <SvgIcon
+        style={{ color: `black` }}
         width='24'
         height='24'
         xmlns='http://www.w3.org/2000/svg'

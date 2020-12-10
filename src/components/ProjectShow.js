@@ -33,7 +33,7 @@ export const ProjectShow = ({
           source='youtube'
         />
       ) : (
-        <Image center src={image.imageURL} alt=''></Image>
+        <Image src={image.imageURL} alt=''></Image>
       )}
 
       <Table celled definition>

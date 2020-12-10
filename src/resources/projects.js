@@ -107,4 +107,5 @@ export const projects = [
       position: 'center',
     },
   },
+  
 ];

@@ -1,16 +1,16 @@
-
 .link {
   margin-top: 1rem;
   size: 25%;
-  background-color: white;
+  color: white;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 .picture {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   border-radius: 50%;
   margin-top: 10em;
   margin-left: auto;
@@ -18,19 +18,17 @@
   width: 15%;
   height: 15%;
 }
-.about {
-  background-color: black
-}
+
 .App {
-
   margin-top: auto;
-
 }
 .dropdown {
   display: flex;
-  justify-content: center;
-  margin-top: 1em;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
-
-
+.aboutMe {
+  padding: '15px';
+}

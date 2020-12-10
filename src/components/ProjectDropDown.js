@@ -1,5 +1,5 @@
-import React from 'react';
-import { Dropdown } from 'semantic-ui-react';
+import { MenuItem, Select } from '@material-ui/core';
+import React, { useState } from 'react';
 
 const ProjectDropDown = ({ history, projects }) => {
   const options = [];
@@ -13,9 +13,30 @@ const ProjectDropDown = ({ history, projects }) => {
     options.push(optionHash);
   });
 
+  const handleChange = (e) => {
+    setSelectedValue(e.target.value);
+    history.push(`/${e.target.value}`);
+  };
+
+  const [selectedValue, setSelectedValue] = useState('');
+  console.log(selectedValue);
   return (
+    // <div className='dropdown'>
+    //   <Dropdown defaultValue='Projects' button options={options} />
+    // </div>
     <div className='dropdown'>
-      <Dropdown text='PROJECTS' header='Projects' inline options={options} />
+      <Select
+        variant='outlined'
+        value={selectedValue}
+        placeholder='Projects'
+        onChange={(e) => handleChange(e)}
+      >
+        {projects.map((project, idx) => (
+          <MenuItem value={project.slug} key={idx}>
+            {project.name}
+          </MenuItem>
+        ))}
+      </Select>
     </div>
   );
 };
