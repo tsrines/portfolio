@@ -1,42 +1,61 @@
-import { MenuItem, Select } from '@material-ui/core';
 import React, { useState } from 'react';
+import {
+  Avatar,
+  FormControl,
+  InputLabel,
+  makeStyles,
+  MenuItem,
+  Select,
+  Typography,
+} from '@material-ui/core';
+import { useHistory } from 'react-router';
 
-const ProjectDropDown = ({ history, projects }) => {
-  const options = [];
-  projects.forEach((project) => {
-    let optionHash = {};
-    optionHash.key = project.name;
-    optionHash.text = project.name;
-    optionHash.value = project.name;
-    optionHash.onClick = (e, data) => history.push(`/${project.slug}`);
-    optionHash.image = { size: 'small', src: project.image.imageURL };
-    options.push(optionHash);
-  });
-
+const ProjectDropDown = ({ projects }) => {
   const handleChange = (e) => {
-    setSelectedValue(e.target.value);
+    setProject(e.target.value);
     history.push(`/${e.target.value}`);
   };
 
-  const [selectedValue, setSelectedValue] = useState('');
-  console.log(selectedValue);
+  const history = useHistory();
+  const [project, setProject] = useState('');
+
+  const useStyles = makeStyles((theme) => ({
+    formControl: {
+      margin: theme.spacing(1),
+      minWidth: 250,
+    },
+    dropDown: {
+      display: `flex`,
+      justifyContent: `center`,
+    },
+    input: {
+      marginRight: `25px`,
+    },
+  }));
+
+  const classes = useStyles();
+
   return (
-    // <div className='dropdown'>
-    //   <Dropdown defaultValue='Projects' button options={options} />
-    // </div>
-    <div className='dropdown'>
-      <Select
-        variant='outlined'
-        value={selectedValue}
-        placeholder='Projects'
-        onChange={(e) => handleChange(e)}
-      >
-        {projects.map((project, idx) => (
-          <MenuItem value={project.slug} key={idx}>
-            {project.name}
-          </MenuItem>
-        ))}
-      </Select>
+    <div className={classes.dropDown}>
+      <FormControl className={classes.formControl}>
+        <InputLabel className={classes.input} id='demo-simple-select-label'>
+          <Typography variant='h4'>Projects</Typography>
+        </InputLabel>
+        <Select
+          className={classes.selectMenu}
+          labelId='demo-simple-select-label'
+          variant='outlined'
+          value={project}
+          onChange={handleChange}
+        >
+          {projects.map(({ slug, image, name }, idx) => (
+            <MenuItem className={classes.menuItem} value={slug} key={idx}>
+              <Avatar src={image.imageURL}>{name}</Avatar>
+              <Typography>{name}</Typography>
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
     </div>
   );
 };

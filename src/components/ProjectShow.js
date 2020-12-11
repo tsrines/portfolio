@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Container, Table, Image, Embed } from 'semantic-ui-react';
 
 export const ProjectShow = ({

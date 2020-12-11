@@ -2,15 +2,18 @@ import React from 'react';
 import { Switch, Route } from 'react-router';
 import { HashRouter as Router } from 'react-router-dom';
 import { projects } from './resources/projects';
-import Picture from './components/picture';
+
 import { ProjectShow } from './components/ProjectShow';
 
 import './App.css';
 import AboutMe from './components/AboutMe';
+import { MuiThemeProvider } from '@material-ui/core';
+import { theme } from './themes/theme';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className='App'>
+    <MuiThemeProvider theme={theme}>
       <Router basename='/'>
         <Switch>
           {projects.map((project) => (
@@ -31,13 +34,11 @@ function App() {
           <Route
             exact
             path='/'
-            render={(props) => (
-              <Picture history {...props} projects={projects} />
-            )}
+            render={(props) => <Main history {...props} projects={projects} />}
           />
         </Switch>
       </Router>
-    </div>
+    </MuiThemeProvider>
   );
 }
 

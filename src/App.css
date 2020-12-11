@@ -1,34 +1,3 @@
-.link {
-  margin-top: 1rem;
-  size: 25%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-top: 10em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  height: 15%;
-}
-
-.App {
-  margin-top: auto;
-}
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
-
 .aboutMe {
   padding: '15px';
 }

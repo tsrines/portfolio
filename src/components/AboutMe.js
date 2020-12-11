@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import React from 'react';
 import { useHistory } from 'react-router';
 import { Button, Container, Divider, Image } from 'semantic-ui-react';
@@ -5,8 +6,9 @@ import timHeadshot from '../TimPossibleHeadshot.jpg';
 
 const AboutMe = () => {
   const history = useHistory();
+
   return (
-    <div style={{ padding: `40px` }}>
+    <div style={{ padding: `25px` }}>
       <Image bordered centered circular size='small' alt='' src={timHeadshot} />{' '}
       <Container
         style={{
@@ -20,7 +22,7 @@ const AboutMe = () => {
         text
       >
         <Divider style={{ marginBottom: `15px`, color: `gray` }} horizontal>
-          <h2>Tim Rines</h2>
+          <Typography variant='h2'>Tim Rines</Typography>
         </Divider>
 
         <p>
@@ -68,7 +70,7 @@ const AboutMe = () => {
           <a href='mailto: tim@rines.io'> tim@rines.io</a>.
         </p>
         <Button floated='right' onClick={() => history.push({ pathname: '/' })}>
-          Back
+          <Typography>Back</Typography>
         </Button>
       </Container>
     </div>

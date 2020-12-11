@@ -1,31 +1,10 @@
-import React, { Fragment } from 'react';
-import ProjectDropDown from './ProjectDropDown';
-import TimHeadshot from '../TimPossibleHeadshot.jpg';
-import { linkedIn, email, twitter, github, resume, airbnb } from './links';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import { Link } from 'react-router-dom';
-import InfoIcon from '@material-ui/icons/Info';
+import React from 'react';
+import timHeadshot from '../TimPossibleHeadshot.jpg';
+import { Image } from 'semantic-ui-react';
 
-const Picture = (props) => {
+const Picture = () => {
   return (
-    <Fragment>
-      <div>
-        <img className='picture' alt='' src={TimHeadshot} />
-      </div>
-      <div className='link'>
-        <Breadcrumbs>
-          {linkedIn()}
-          {resume()}
-          {github()}
-          {email()}
-          {airbnb()}
-          <Link color='inherit' to='/aboutme'>
-            <InfoIcon style={{ color: `gray` }} />
-          </Link>
-        </Breadcrumbs>
-      </div>
-      <ProjectDropDown {...props} />
-    </Fragment>
+    <Image bordered centered circular size='small' alt='' src={timHeadshot} />
   );
 };
 export default Picture;
