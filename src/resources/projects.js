@@ -23,6 +23,28 @@ export const projects = [
   },
   {
     id: 2,
+    slug: 'mock-interview-platform',
+    name: 'Mock Interview Platform (Pramp, CodeInterview.io, etc.)',
+    shortDescription:
+      'Practice algorithms with your friends with a live text editor and video chat functionality!',
+    websiteURL: 'http://mock-interview-platform.herokuapp.com/',
+    longDescription:
+      'Practice your coding skills in both Javascript and Python with friends! Our video chat enabled live text editor powered by VSCode lets our run your code, see your results, and collaborate with teammates!',
+    technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
+    github: {
+      main: '',
+      frontend: 'https://github.com/hatchways/team-all-bran',
+      backend: '',
+    },
+    demoVideo: '',
+    image: {
+      imageURL:
+        'https://camo.githubusercontent.com/f31d3dfcb5dd42e63a81ea093420896245d801f1fb72b3b681e4bc5050077073/68747470733a2f2f692e696d6775722e636f6d2f6d5650314f506b2e706e67',
+      position: 'center',
+    },
+  },
+  {
+    id: 3,
     slug: 'shoppies',
     name: 'The Shoppies',
     shortDescription: 'Find and nominate 5 of your favorite movies',
@@ -65,47 +87,46 @@ export const projects = [
       position: 'center',
     },
   },
-  {
-    id: 4,
-    slug: 'portfolio',
-    name: 'Portfolio',
-    shortDescription: 'Portfolio Website',
-    websiteURL: 'https://www.rines.io',
-    longDescription: 'This website!',
-    technologies:
-      'React.js, Material UI React, Semantic UI React, Github Pages, Travis CI',
-    github: {
-      main: '',
-      frontend: 'https://github.com/tsrines/portfolio',
-      backend: '',
-    },
-    demoVideo: '',
-    image: {
-      imageURL:
-        'https://github.com/tsrines/portfolio/blob/master/public/images/Portfolio.png?raw=true',
-      position: 'center',
-    },
-  },
-  {
-    id: 5,
-    slug: 'corona',
-    name: 'Corona Daily Check-In',
-    shortDescription: 'Worldwide statistics for COVID-19 pandemic',
-    websiteURL: 'https://tsrines.github.io/corona-front/',
-    longDescription:
-      'Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day',
-    technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
-    github: {
-      main: '',
-      frontend: 'https://github.com/tsrines/corona-front',
-      backend: '',
-    },
-    demoVideo: '',
-    image: {
-      imageURL:
-        'https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true',
-      position: 'center',
-    },
-  },
-  
+  // {
+  //   id: 4,
+  //   slug: 'portfolio',
+  //   name: 'Portfolio',
+  //   shortDescription: 'Portfolio Website',
+  //   websiteURL: 'https://www.rines.io',
+  //   longDescription: 'This website!',
+  //   technologies:
+  //     'React.js, Material UI React, Semantic UI React, Github Pages, Travis CI',
+  //   github: {
+  //     main: '',
+  //     frontend: 'https://github.com/tsrines/portfolio',
+  //     backend: '',
+  //   },
+  //   demoVideo: '',
+  //   image: {
+  //     imageURL:
+  //       'https://github.com/tsrines/portfolio/blob/master/public/images/Portfolio.png?raw=true',
+  //     position: 'center',
+  //   },
+  // },
+  // {
+  //   id: 5,
+  //   slug: 'corona',
+  //   name: 'Corona Daily Check-In',
+  //   shortDescription: 'Worldwide statistics for COVID-19 pandemic',
+  //   websiteURL: 'https://tsrines.github.io/corona-front/',
+  //   longDescription:
+  //     'Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day',
+  //   technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
+  //   github: {
+  //     main: '',
+  //     frontend: 'https://github.com/tsrines/corona-front',
+  //     backend: '',
+  //   },
+  //   demoVideo: '',
+  //   image: {
+  //     imageURL:
+  //       'https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true',
+  //     position: 'center',
+  //   },
+  // },
 ];

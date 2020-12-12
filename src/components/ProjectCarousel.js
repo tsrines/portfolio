@@ -22,14 +22,10 @@ function ProjectCarousel({ projects, projectView, setProjectView }) {
         animation='slide'
         autoPlay={false}
         changeOnFirstRender={true}
+        navButtonsAlwaysVisible={true}
       >
         {projects.map((project, i) => (
-          <ProjectShow
-            projectView={projectView}
-            setProjectView={setProjectView}
-            key={i}
-            project={project}
-          />
+          <ProjectShow key={i} project={project} />
         ))}
       </Carousel>
       <Button variant='outlined' onClick={() => setProjectView(false)}>

@@ -7,12 +7,12 @@ import ProjectCarousel from './ProjectCarousel';
 const Main = ({ projects }) => {
   const useStyles = makeStyles(() => ({
     mainContainer: {
-      padding: `50px`,
+      minHeight: '100vh',
     },
     projectButton: {
       display: `flex`,
       justifyContent: `center`,
-      marginTop: `25px`,
+      marginTop: `10px`,
     },
   }));
 
@@ -22,7 +22,12 @@ const Main = ({ projects }) => {
 
   return (
     <div className={classes.mainContainer}>
-      <Grid container>
+      <Grid
+        container
+        alignItems='center'
+        justify='center'
+        style={{ minHeight: '100vh' }}
+      >
         <Grid item xs={false} sm={3} />
         {!projectView && (
           <Grid container direction='column' item xs={12} sm={6}>
@@ -32,6 +37,13 @@ const Main = ({ projects }) => {
             <Grid item xs={12}>
               <Social />
             </Grid>
+            {!projectView && (
+              <Grid xs={12} item className={classes.projectButton}>
+                <Button variant='outlined' onClick={() => setProjectView(true)}>
+                  Projects
+                </Button>
+              </Grid>
+            )}
             <Grid item xs={false} sm={12}></Grid>
           </Grid>
         )}
@@ -47,13 +59,6 @@ const Main = ({ projects }) => {
 
         <Grid item xs={false} sm={3} />
       </Grid>
-      {!projectView && (
-        <div className={classes.projectButton}>
-          <Button variant='outlined' onClick={() => setProjectView(true)}>
-            Projects
-          </Button>
-        </div>
-      )}
     </div>
   );
 };

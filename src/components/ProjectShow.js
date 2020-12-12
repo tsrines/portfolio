@@ -1,3 +1,4 @@
+import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import { Container, Table, Image, Embed } from 'semantic-ui-react';
 
@@ -13,8 +14,15 @@ export const ProjectShow = ({
     demoVideo,
   },
 }) => {
+  const useStyles = makeStyles(() => ({
+    projectShowContainer: {
+      display: `flex`,
+      flexDirection: `column`,
+    },
+  }));
+  const classes = useStyles();
   return (
-    <Container style={{ padding: '1em' }}>
+    <Container className={classes.projectShowContainer}>
       {demoVideo !== '' ? (
         <Embed
           active
