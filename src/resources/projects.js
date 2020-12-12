@@ -27,7 +27,7 @@ export const projects = [
     name: 'Mock Interview Platform (Pramp, CodeInterview.io, etc.)',
     shortDescription:
       'Practice algorithms with your friends with a live text editor and video chat functionality!',
-    websiteURL: 'http://mock-interview-platform.herokuapp.com/',
+    websiteURL: 'https://mock-interview-platform.herokuapp.com/',
     longDescription:
       'Practice your coding skills in both Javascript and Python with friends! Our video chat enabled live text editor powered by VSCode lets our run your code, see your results, and collaborate with teammates!',
     technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
@@ -39,7 +39,7 @@ export const projects = [
     demoVideo: '',
     image: {
       imageURL:
-        'https://camo.githubusercontent.com/f31d3dfcb5dd42e63a81ea093420896245d801f1fb72b3b681e4bc5050077073/68747470733a2f2f692e696d6775722e636f6d2f6d5650314f506b2e706e67',
+        'https://github.com/tsrines/portfolio/blob/dev/src/WaitingRoom.png?raw=true',
       position: 'center',
     },
   },

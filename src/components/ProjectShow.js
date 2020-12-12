@@ -68,16 +68,20 @@ export const ProjectShow = ({
             <Table.Cell>{technologies}</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>Github Front End</Table.Cell>
             <Table.Cell>
-              <a href={github.frontend}>{github.frontend}</a>
+              {github.backend ? `GitHub Front End` : ` GitHub `}
+            </Table.Cell>
+            <Table.Cell>
+              <a href={github.frontend}>
+                {github.backend ? `Front End` : `Repo`}
+              </a>
             </Table.Cell>
           </Table.Row>
           {github.backend !== '' && (
             <Table.Row>
-              <Table.Cell>Github Backend</Table.Cell>
+              <Table.Cell>GitHub Backend</Table.Cell>
               <Table.Cell>
-                <a href={github.backend}>{github.backend}</a>
+                <a href={github.backend}>Back End</a>
               </Table.Cell>
             </Table.Row>
           )}
