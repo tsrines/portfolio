@@ -30,7 +30,8 @@ export const projects = [
     websiteURL: 'https://mock-interview-platform.herokuapp.com/',
     longDescription:
       'Practice your coding skills in both Javascript and Python with friends! Our video chat enabled live text editor powered by VSCode lets our run your code, see your results, and collaborate with teammates!',
-    technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
+    technologies:
+      'React, Material UI, Express, Node.js, MongoDB, Heroku, Socket.io',
     github: {
       main: '',
       frontend: 'https://github.com/hatchways/team-all-bran',

@@ -18,6 +18,7 @@ export const ProjectShow = ({
     projectShowContainer: {
       display: `flex`,
       flexDirection: `column`,
+      justifyContent: `center`,
     },
   }));
   const classes = useStyles();
@@ -40,7 +41,7 @@ export const ProjectShow = ({
           source='youtube'
         />
       ) : (
-        <Image src={image.imageURL} alt=''></Image>
+        <Image fluid src={image.imageURL} alt='Project Image'></Image>
       )}
 
       <Table celled definition>
