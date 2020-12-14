@@ -30,9 +30,16 @@ const AboutMe = () => {
           I’ll make this short and sweet. I grew up in Cary, North Carolina
           after my dad was transferred from MA with a company called Data
           General. He later worked for IBM and brought home one of the first IBM
-          Aptiva PCs. I was hooked on PC gaming, networking, building gaming
-          computers, and LAN parties. In the end, I decided I didn’t want to
-          make my hobby my job, so instead, got into sales after college.{' '}
+          <a
+            href='https://en.wikipedia.org/wiki/IBM_Aptiva'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {` Aptiva`}
+          </a>{' '}
+          PCs. I was hooked on PC gaming, networking, building gaming computers,
+          and LAN parties. In the end, I decided I didn’t want to make my hobby
+          my job, so instead, got into sales after college.{' '}
         </p>
         <p>
           After a successful career in telecommunications sales and Airbnb
@@ -47,17 +54,31 @@ const AboutMe = () => {
         <p>
           {' '}
           For safety reasons (2020, right?), I have moved back to Charleston,
-          where I remotely interned at ErrundsOnline. Their goal is to connect
-          local brick and mortar stores with the communities, starting with a
-          bodega in NYC, through an app built in React Native, Express, Apollo
-          GraphQL and PostgreSQL. It was a real pleasure working with some of
-          the most up to date technologies out.
+          where I remotely interned at{' '}
+          <a
+            href='http://www.errundsonline.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Errunds
+          </a>
+          . Their goal is to connect local brick and mortar stores with the
+          communities, starting with a bodega in NYC, through an app built in
+          React Native, Express, Apollo GraphQL and PostgreSQL. It was a real
+          pleasure working with some of the most up to date technologies out.
         </p>
         <p>
-          Recently I have finished a co-op program with Hatchways.io. It was a
-          great program with actionable feedback avenues including code reviews,
-          technical reviews/interviews, and peer reviews. You can check out the
-          final product{' '}
+          Recently I have finished a co-op program with{' '}
+          <a
+            href='http://www.hatchways.io'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Hatchways.io
+          </a>
+          . It was a great program with actionable feedback avenues including
+          code reviews, technical reviews/interviews, and peer reviews. You can
+          check out the final product{' '}
           <a
             target='_blank'
             rel='noopener noreferrer'

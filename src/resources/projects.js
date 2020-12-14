@@ -6,7 +6,7 @@ export const projects = [
     shortDescription: 'Search for doctors nationwide by illness',
     websiteURL: '',
     longDescription:
-      'Telemed is inspired by the shortage of local doctors and specialists.  Telemed, and the telehealth industry as a whole, is used to assist in provider outreach capabilities as it is becoming more difficult to physically go offices while sick',
+      'Telemed is inspired by the shortage of local doctors and specialists in under-represented and rural areas of the US.  Telemed, and the telehealth industry as a whole, is used to assist in provider outreach capabilities as it is becoming more difficult to physically go offices while sick',
     technologies:
       'React, Ruby on Rails, ActiveRecord, PostgreSQL, Heroku, JSON Web Tokens, Bcrypt, Semantic UI, Google Maps, Geocode & Places API',
     github: {
@@ -29,7 +29,7 @@ export const projects = [
       'Practice algorithms with your friends with a live text editor and video chat functionality!',
     websiteURL: 'https://mock-interview-platform.herokuapp.com/',
     longDescription:
-      'Practice your coding skills in both Javascript and Python with friends! Our video chat enabled live text editor powered by VSCode lets our run your code, see your results, and collaborate with teammates!',
+      'Practice your coding skills in both Javascript and Python with friends! Our video chat enabled live text editor powered by VSCode lets you run your code, see your results, and collaborate with teammates!',
     technologies:
       'React, Material UI, Express, Node.js, MongoDB, Heroku, Socket.io',
     github: {
@@ -67,7 +67,7 @@ export const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     slug: 'nameerror',
     name: 'nameError',
     shortDescription: 'Memory match game',
@@ -88,46 +88,46 @@ export const projects = [
       position: 'center',
     },
   },
-  // {
-  //   id: 4,
-  //   slug: 'portfolio',
-  //   name: 'Portfolio',
-  //   shortDescription: 'Portfolio Website',
-  //   websiteURL: 'https://www.rines.io',
-  //   longDescription: 'This website!',
-  //   technologies:
-  //     'React.js, Material UI React, Semantic UI React, Github Pages, Travis CI',
-  //   github: {
-  //     main: '',
-  //     frontend: 'https://github.com/tsrines/portfolio',
-  //     backend: '',
-  //   },
-  //   demoVideo: '',
-  //   image: {
-  //     imageURL:
-  //       'https://github.com/tsrines/portfolio/blob/master/public/images/Portfolio.png?raw=true',
-  //     position: 'center',
-  //   },
-  // },
-  // {
-  //   id: 5,
-  //   slug: 'corona',
-  //   name: 'Corona Daily Check-In',
-  //   shortDescription: 'Worldwide statistics for COVID-19 pandemic',
-  //   websiteURL: 'https://tsrines.github.io/corona-front/',
-  //   longDescription:
-  //     'Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day',
-  //   technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
-  //   github: {
-  //     main: '',
-  //     frontend: 'https://github.com/tsrines/corona-front',
-  //     backend: '',
-  //   },
-  //   demoVideo: '',
-  //   image: {
-  //     imageURL:
-  //       'https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true',
-  //     position: 'center',
-  //   },
-  // },
+  {
+    id: 5,
+    slug: 'portfolio',
+    name: 'Portfolio',
+    shortDescription: 'Portfolio Website',
+    websiteURL: 'https://www.rines.io',
+    longDescription: 'This website!',
+    technologies:
+      'React.js, Material UI React, Semantic UI React, Github Pages, Travis CI',
+    github: {
+      main: '',
+      frontend: 'https://github.com/tsrines/portfolio',
+      backend: '',
+    },
+    demoVideo: '',
+    image: {
+      imageURL:
+        'https://github.com/tsrines/portfolio/blob/master/public/images/Portfolio.png?raw=true',
+      position: 'center',
+    },
+  },
+  {
+    id: 6,
+    slug: 'corona',
+    name: 'Corona Daily Check-In',
+    shortDescription: 'Worldwide statistics for COVID-19 pandemic',
+    websiteURL: 'https://tsrines.github.io/corona-front/',
+    longDescription:
+      'Corona Daily Check-In was inspired by my daily urge to check statistics for the current state of the Corona Virus Pandemic.  With a simple GUI and sortable columns, it makes for an easy check-in, see what the statistics are, and then move on with my day',
+    technologies: 'React.js,Heroku, Semantic UI React, Lodash, NovelCovid API',
+    github: {
+      main: '',
+      frontend: 'https://github.com/tsrines/corona-front',
+      backend: '',
+    },
+    demoVideo: '',
+    image: {
+      imageURL:
+        'https://github.com/tsrines/portfolio/blob/master/public/images/Corona.png?raw=true',
+      position: 'center',
+    },
+  },
 ];
