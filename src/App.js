@@ -15,27 +15,28 @@ import AdSlot320x50 from './components/AdSlot320x50';
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <Router basename='/'>
+      <Router basename="/">
         <Switch>
-          {projects.map((project) => (
+          {projects.map(project => (
             <Route
               key={project.id}
               exact
               path={`/${project.slug}`}
-              render={(props) => (
+              render={props => (
                 <ProjectShow exact {...props} project={project} />
               )}
             />
           ))}
           <Route
             exact
-            path='/aboutme'
-            render={(props) => <AboutMe {...props} />}
+            path="/aboutme"
+            render={props => <AboutMe {...props} />}
           />
+
           <Route
             exact
-            path='/'
-            render={(props) => <Main history {...props} projects={projects} />}
+            path="/"
+            render={props => <Main history {...props} projects={projects} />}
           />
         </Switch>
         <AdSlot320x50 />

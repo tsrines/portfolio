@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
 const AdSlot320x50 = () => {
-    return (
-        <div>
-           {/* <iframe title='first ad' src="https://secure.adnxs.com/tt?id=20685543" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"   width="320" height="50"></iframe> */}
-        </div>
-    )
-}
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, []);
+  return (
+    <ins
+      class="adsbygoogle"
+      style={{ display: 'inline-block', width: '320px', height: '50px' }}
+      data-ad-client="ca-pub-4361391469035574"
+      data-ad-slot="4853401776"
+    ></ins>
+  );
+};
 
-export default AdSlot320x50
+export default AdSlot320x50;
