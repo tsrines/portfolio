@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
+import Carousel from 'react-material-ui-carousel';
 import { Container, Table, Image, Embed } from 'semantic-ui-react';
 
 export const ProjectShow = ({
@@ -41,7 +42,9 @@ export const ProjectShow = ({
           source='youtube'
         />
       ) : (
-        <Image fluid src={image.imageURL} alt='Project Image'></Image>
+        <Carousel>
+          <Image fluid src={image.imageURL} alt='Project Image'></Image>
+        </Carousel>
       )}
 
       <Table celled definition>

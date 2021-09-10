@@ -10,6 +10,7 @@ import AboutMe from './components/AboutMe';
 import { MuiThemeProvider } from '@material-ui/core';
 import { theme } from './themes/theme';
 import Main from './components/Main';
+import AdSlot320x50 from './components/AdSlot320x50';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             render={(props) => <Main history {...props} projects={projects} />}
           />
         </Switch>
+        <AdSlot320x50 />
       </Router>
     </MuiThemeProvider>
   );
