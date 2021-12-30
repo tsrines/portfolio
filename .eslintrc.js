@@ -1,15 +1,15 @@
 module.exports = {
   env: {
-    "browser": true,
-    "es2021": true,
-    "jest": true,
-    "node":true,
+    browser: true,
+    es6: true,
+    node: true,
+    jest: true,
   },
-  extends: [
-    'prettier',
-    'airbnb',
-
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -17,11 +17,6 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    ["prettier"],
-  ],
-  rules: {
-    "prettier/prettier": ["error"]
-
-  },
+  plugins: ['react'],
+  rules: {},
 };

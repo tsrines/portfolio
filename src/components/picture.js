@@ -4,7 +4,7 @@ import { Image } from 'semantic-ui-react';
 
 const Picture = () => {
   return (
-    <Image bordered centered circular size='small' alt='' src={timHeadshot} />
+    <Image bordered centered circular size="small" alt="" src={timHeadshot} />
   );
 };
 export default Picture;

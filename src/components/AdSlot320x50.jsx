@@ -6,7 +6,7 @@ const AdSlot320x50 = () => {
   }, []);
   return (
     <ins
-      class="adsbygoogle"
+      className="adsbygoogle"
       style={{ display: 'inline-block', width: '320px', height: '50px' }}
       data-ad-client="ca-pub-4361391469035574"
       data-ad-slot="4853401776"
