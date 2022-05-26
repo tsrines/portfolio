@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { email, github, linkedIn, airbnb } from './links';
+import { LinkedIn, Github, Resume, Email, Airbnb } from './Links';
 import InfoIcon from '@material-ui/icons/Info';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import { makeStyles } from '@material-ui/core';
@@ -15,17 +15,22 @@ function Social() {
   }));
 
   const classes = useStyles();
-
+  const [showAboutMe] = useState(false)
   return (
     <div className={classes.breadCrumbs}>
       <Breadcrumbs>
-        {linkedIn()}
-        {github()}
-        {email()}
-        {airbnb()}
-        <Link color='inherit' to='/aboutme'>
-          <InfoIcon style={{ color: `gray` }} />
-        </Link>
+        <Github />
+        <Email />
+        {showAboutMe && (
+          <>
+          <Resume />
+          <LinkedIn />
+          <Airbnb />
+            <Link color='inherit' to='/aboutme'>
+              <InfoIcon style={{ color: `gray` }} />
+            </Link>
+          </>
+        )}
       </Breadcrumbs>
     </div>
   );

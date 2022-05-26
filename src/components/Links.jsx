@@ -7,7 +7,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import { SvgIcon } from '@material-ui/core';
 import DescriptionIcon from '@material-ui/icons/Description';
 
-export const linkedIn = () => {
+export const LinkedIn = () => {
   return (
     <Link
       target='_blank'
@@ -19,7 +19,7 @@ export const linkedIn = () => {
   );
 };
 
-export const twitter = () => {
+export const Twitter = () => {
   return (
     <Link target='_blank' href='https://twitter.com/rines_io' component='a'>
       <TwitterIcon style={{ color: `gray` }} />
@@ -27,14 +27,14 @@ export const twitter = () => {
   );
 };
 
-export const github = (props) => {
+export const Github = () => {
   return (
     <Link target='_blank' href='https://www.github.com/tsrines' component='a'>
       <GitHubIcon style={{ color: `gray` }} />
     </Link>
   );
 };
-export const resume = () => {
+export const Resume = () => {
   return (
     <Link
       href='https://www.learn.co/tsrines/resume'
@@ -45,7 +45,7 @@ export const resume = () => {
     </Link>
   );
 };
-export const email = () => {
+export const Email = () => {
   return (
     <Link
       style={{ textDecoration: `none` }}
@@ -57,7 +57,7 @@ export const email = () => {
     </Link>
   );
 };
-export const airbnb = () => {
+export const Airbnb = () => {
   return (
     <Link
       target='_blank'
@@ -85,7 +85,7 @@ export const airbnb = () => {
     </Link>
   );
 };
-export const medium = () => {
+export const Medium = () => {
   return (
     <Link
       color='inherit'

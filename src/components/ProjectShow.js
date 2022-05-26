@@ -1,5 +1,6 @@
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
+import PropTypes from 'prop-types'
 import Carousel from 'react-material-ui-carousel';
 import { Container, Table, Image, Embed } from 'semantic-ui-react';
 
@@ -94,3 +95,20 @@ export const ProjectShow = ({
     </Container>
   );
 };
+
+
+
+ProjectShow.propTypes = {
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    longDescription: PropTypes.string.isRequired,
+    technologies: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    websiteURL: PropTypes.string.isRequired,
+    demoVideo:PropTypes.string.isRequired})
+}
+
+export default ProjectShow
+

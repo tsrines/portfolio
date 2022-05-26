@@ -1,9 +1,11 @@
 {
-  "name": "timothyrines",
+  "name": "citizen",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://tsrines.github.io/",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",

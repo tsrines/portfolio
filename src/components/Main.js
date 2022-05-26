@@ -8,6 +8,7 @@ const Main = ({ projects }) => {
   const useStyles = makeStyles(() => ({
     mainContainer: {
       minHeight: '100vh',
+      backgroundColor: '#1a1a1a',
     },
     projectButton: {
       display: `flex`,
@@ -17,7 +18,7 @@ const Main = ({ projects }) => {
   }));
 
   const [projectView, setProjectView] = useState(false);
-
+  const [showingProjects] = useState(false);
   const classes = useStyles();
 
   return (
@@ -29,7 +30,7 @@ const Main = ({ projects }) => {
         style={{ minHeight: '100vh' }}
       >
         <Grid item xs={false} sm={3} />
-        {!projectView && (
+        {!projectView &&   (
           <Grid container direction='column' item xs={12} sm={6}>
             <Grid item xs={12}>
               <Picture />
@@ -37,7 +38,7 @@ const Main = ({ projects }) => {
             <Grid item xs={12}>
               <Social />
             </Grid>
-            {!projectView && (
+            {!projectView && showingProjects && (
               <Grid xs={12} item className={classes.projectButton}>
                 <Button variant='outlined' onClick={() => setProjectView(true)}>
                   Projects
