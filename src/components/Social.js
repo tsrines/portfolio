@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { LinkedIn, Github, Resume, Email, Airbnb } from './Links';
+import { LinkedIn, Github, Resume, Email, Airbnb, Twitter } from './Links';
 import InfoIcon from '@material-ui/icons/Info';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import { makeStyles } from '@material-ui/core';
@@ -20,9 +20,10 @@ function Social() {
     <div className={classes.breadCrumbs}>
       <Breadcrumbs>
         <Github />
-        <Email />
+        <Twitter />
         {showAboutMe && (
           <>
+          <Email />
           <Resume />
           <LinkedIn />
           <Airbnb />

@@ -21,7 +21,7 @@ export const LinkedIn = () => {
 
 export const Twitter = () => {
   return (
-    <Link target='_blank' href='https://twitter.com/rines_io' component='a'>
+    <Link target='_blank' href='https://twitter.com/tweetrines' component='a'>
       <TwitterIcon style={{ color: `gray` }} />
     </Link>
   );
