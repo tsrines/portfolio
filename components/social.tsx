@@ -1,4 +1,4 @@
-import { Github, Email } from "./social-links"
+import { Github, Email, LinkedIn } from './social-links';
 
 export default function Social() {
   return (
@@ -6,7 +6,8 @@ export default function Social() {
       <div className="flex items-center gap-4">
         <Github />
         <Email />
+        <LinkedIn />
       </div>
     </div>
-  )
+  );
 }
