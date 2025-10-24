@@ -11,6 +11,8 @@
 
 # production
 /build
+/.next/
+/out/
 
 # misc
 medium-brands.svg
@@ -28,3 +30,7 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+
+# Next.js
+next-env.d.ts
+*.tsbuildinfo
